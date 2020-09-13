@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Добро пожаловать на страницы GitHub
 
 Вы можете использовать [редактор на GitHub](https://github.com/warsan/Polygraf/edit/master/docs/index.md) для поддержания и предварительного просмотра контента для вашего сайта в файлах Markdown.
 
