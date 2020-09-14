@@ -1,0 +1,23 @@
+{
+  "name": "Просто песочница",
+  "version": "1.0.0",
+  "description": "Поиграем в песочек",
+  "main": "/index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "vue": "latest",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    
+    "serve": "^11.2.0",
+    "lz-string": "1.4.4",
+    "codesandbox": "1.1.13"
+  }
+}
