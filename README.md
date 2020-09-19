@@ -25,7 +25,7 @@ Markdown-это легкий и простой в использовании с�
 
 **Bold** и _Italic_ и `Code` текст
 
-[Link](url) и ![Image](src)
+[Link](#url) и ![Image](src="")
 ```
 
 Для получения более подробной информации см. [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
