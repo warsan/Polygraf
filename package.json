@@ -3,18 +3,24 @@
   "version": "1.0.0",
   "description": "Живая графика",
   "main": "/index.html",
-  "scripts": { "start": "serve" },
   "keywords": [],
   "license": "MIT",
   "dependencies": {
     "vue": "latest",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "serve": "^11.2.0",
     "lz-string": "1.4.4",
     "codesandbox": "1.1.13"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
