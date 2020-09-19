@@ -1,11 +1,9 @@
 {
-  "name": "Просто песочница",
+  "name": "графика",
   "version": "1.0.0",
-  "description": "Поиграем в песочек",
+  "description": "Живая графика",
   "main": "/index.html",
-  "scripts": {
-    "start": "serve"
-  },
+  "scripts": { "start": "serve" },
   "keywords": [],
   "license": "MIT",
   "dependencies": {
@@ -15,7 +13,6 @@
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
-    
     "serve": "^11.2.0",
     "lz-string": "1.4.4",
     "codesandbox": "1.1.13"
