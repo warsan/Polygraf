@@ -1,6 +1,6 @@
 
-import Vue from 'vue'; 
-import TweenLite from 'TweenLite';
+// import Vue from 'vue'; 
+// import TweenLite from 'TweenLite';
 
 new Vue( {el: "#app", data: function() 
            {var ugl = 10;
