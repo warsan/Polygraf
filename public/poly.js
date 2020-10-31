@@ -1,15 +1,17 @@
+import Vue from 'vue' 
+import TweenLite from 'TweenLite'
 
 new Vue({ el: "#app",
           data: function() {
-            var угл = 10;
-            var stats = Array.apply(null, { length: угл }).map(
+            var ugl = 10;
+            var stats = Array.apply(null, { length: ugl }).map(
               function() {
                 return 100;
               }
             );
             return { stats: stats,
                      points: generatePoints(stats),
-                     sides: угл,
+                     sides: ugl,
                      minRadius: 50,
                      interval: null,
                      updateInterval: 1000
@@ -64,7 +66,7 @@ new Vue({ el: "#app",
         }
       });
 
-      function valueToPoint(value, index, total) {
+function valueToPoint(value, index, total) {
         var x = 0;
         var y = -value * 1;
         var angle = ((Math.PI * 2) / total) * index;
@@ -75,7 +77,7 @@ new Vue({ el: "#app",
         return { x: tx, y: ty };
       }
 
-      function generatePoints(stats) {
+function generatePoints(stats) {
         var total = stats.length;
         return stats
           .map(function(stat, index) {
@@ -83,4 +85,5 @@ new Vue({ el: "#app",
             return point.x + "," + point.y;
           })
           .join(" ");
-      }
+      }; alert( 'Привет, мир!' );
+      */

@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Динамические переходы состояний</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    
+    <style>
+      svg { display: block; }
+      polygon { fill: #41b883; stroke: #354955; }
+      circle { fill: transparent; stroke: #35495e; }
+      input[type="range"] { display: block;
+                            width: 100%;
+                            margin-bottom: 15px;
+                          }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <svg width="400" height="400">
+        <polygon :points="points"></polygon>
+        <circle cx="200" cy="200" r="200"></circle>
+      </svg>
+      
+      <label>Углы: {{ sides }}</label>
+      <input type="range" min="3" max="500" v-model.number="sides" />
+      <label>Радиус: {{ minRadius }}%</label>
+      <input type="range" min="0" max="400" v-model.number="minRadius" />
+      <label>Скорость: {{ updateInterval }} миллисекунд</label>
+      <input type="range" min="10" max="2000" v-model.number="updateInterval" />
+    </div><!-- <script> alert( 'Привет, мир!' );</script>-->
+    <script defer src="poly.js"></script>
+    <p>Продолжение</p>
+  </body>
+</html>
