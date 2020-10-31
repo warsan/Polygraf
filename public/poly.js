@@ -85,5 +85,5 @@ function generatePoints(stats) {
             return point.x + "," + point.y;
           })
           .join(" ");
-      }; alert( 'Привет, мир!' );
-      */
+      } // alert( 'Привет, мир!' );
+      

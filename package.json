@@ -2,15 +2,15 @@
   "name": "Polygraf",
   "version": "1.0.0",
   "description": "Живая графика",
-  "main": "/index.html",
+  "main": "public/index.html",
   "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "vue": "latest",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-scripts": "3.0.1",
-    "react-router-dom": "^4.2.2"
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.0",
+    "vue": "latest"
   },
   "devDependencies": {
     "serve": "^11.2.0",
