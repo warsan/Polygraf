@@ -1,24 +1,22 @@
-import Vue from 'vue' 
-import TweenLite from 'TweenLite'
 
-new Vue({ el: "#app",
-          data: function() {
-            var ugl = 10;
-            var stats = Array.apply(null, { length: ugl }).map(
-              function() {
-                return 100;
-              }
-            );
-            return { stats: stats,
-                     points: generatePoints(stats),
-                     sides: ugl,
-                     minRadius: 50,
-                     interval: null,
-                     updateInterval: 1000
-                   };
-        },
-        watch: {
-          sides: function(newSides, oldSides) {
+import Vue from 'vue'
+import TweenLite from 'TweenLite'
+{
+new Vue({ el: "#app", 
+data: function() {
+  var ugl = 10;
+  var stats = Array.apply(null,
+    { length: ugl }).map( function() { return 100; });
+    return { stats: stats,
+             points: generatePoints(stats),
+             sides: ugl,
+             minRadius: 50,
+             interval: null,
+             updateInterval: 1000
+            };
+          },
+          watch: {
+            sides: function(newSides, oldSides) {
             var sidesDifference = newSides - oldSides;
             if (sidesDifference > 0) {
               for (var i = 1; i <= sidesDifference; i++) {
@@ -84,6 +82,6 @@ function generatePoints(stats) {
             var point = valueToPoint(stat, index, total);
             return point.x + "," + point.y;
           })
-          .join(" ");
+          .join(" "); //.$mount("#app");
       } // alert( 'Привет, мир!' );
-      
+}   
