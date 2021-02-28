@@ -1,7 +1,5 @@
 
-import Vue from 'vue'
-import TweenLite from 'TweenLite'
-{
+
 new Vue({ el: "#app", 
 data: function() {
   var ugl = 10;
@@ -84,4 +82,3 @@ function generatePoints(stats) {
           })
           .join(" "); //.$mount("#app");
       } // alert( 'Привет, мир!' );
-}   
