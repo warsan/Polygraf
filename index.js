@@ -1,6 +1,7 @@
 
 
-new Vue({ el: "#app", 
+new Vue({
+  el: "#app", 
 data: function() {
   var ugl = 10;
   var stats = Array.apply(null,

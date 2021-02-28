@@ -2,7 +2,7 @@
   "name": "",
   "version": "1.0.0",
   "description": "Живая графика",
-  "main": "public/index.html",
+  "main": "/index.html",
   "keywords": [],
   "license": "MIT",
   "dependencies": {
