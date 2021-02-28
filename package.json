@@ -1,27 +1,8 @@
 {
   "name": "",
   "version": "1.0.0",
-  "description": "Живая графика",
-  "main": "/index.html",
+  "description": "поли-проба",
   "keywords": [],
-  "license": "MIT",
-  "dependencies": {
-    "react": "17.0.1",
-    "react-devtools": "4.9.0",
-    "react-dom": "17.0.1",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.0",
-    "vue": "latest"
-  },
-  "devDependencies": {
-    "serve": "^11.2.0",
-    "lz-string": "1.4.4",
-    "codesandbox": "2.2.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+  "main": "/index.html",
+  "dependencies": {}
 }

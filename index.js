@@ -1,21 +1,24 @@
 
 
 new Vue({
-  el: "#app", 
-data: function() {
-  var ugl = 10;
-  var stats = Array.apply(null,
-    { length: ugl }).map( function() { return 100; });
-    return { stats: stats,
-             points: generatePoints(stats),
-             sides: ugl,
-             minRadius: 50,
-             interval: null,
-             updateInterval: 1000
-            };
-          },
-          watch: {
-            sides: function(newSides, oldSides) {
+  el: "#app",
+          data: function() {
+            var угл = 10;
+            var stats = Array.apply(null, { length: угл }).map(
+              function() {
+                return 100;
+              }
+            );
+            return { stats: stats,
+                     points: generatePoints(stats),
+                     sides: угл,
+                     minRadius: 50,
+                     interval: null,
+                     updateInterval: 1000
+                   };
+        },
+        watch: {
+          sides: function(newSides, oldSides) {
             var sidesDifference = newSides - oldSides;
             if (sidesDifference > 0) {
               for (var i = 1; i <= sidesDifference; i++) {
@@ -23,7 +26,7 @@ data: function() {
               }
             } else {
               var absoluteSidesDifference = Math.abs(sidesDifference);
-              for (var j = 1; j <= absoluteSidesDifference; j++) {
+              for (var i = 1; i <= absoluteSidesDifference; i++) {
                 this.stats.shift();
               }
             }
@@ -63,7 +66,7 @@ data: function() {
         }
       });
 
-function valueToPoint(value, index, total) {
+      function valueToPoint(value, index, total) {
         var x = 0;
         var y = -value * 1;
         var angle = ((Math.PI * 2) / total) * index;
@@ -74,12 +77,12 @@ function valueToPoint(value, index, total) {
         return { x: tx, y: ty };
       }
 
-function generatePoints(stats) {
+      function generatePoints(stats) {
         var total = stats.length;
         return stats
           .map(function(stat, index) {
             var point = valueToPoint(stat, index, total);
             return point.x + "," + point.y;
           })
-          .join(" "); //.$mount("#app");
-      } // alert( 'Привет, мир!' );
+          .join(" ");
+  }
