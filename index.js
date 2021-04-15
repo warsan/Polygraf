@@ -85,4 +85,4 @@ new Vue({
             return point.x + "," + point.y;
           })
           .join(" ");
-  }
+       }
