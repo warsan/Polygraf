@@ -1,5 +1,4 @@
 
-
 new Vue({
   el: "#app",
           data: function() {
@@ -26,7 +25,7 @@ new Vue({
               }
             } else {
               var absoluteSidesDifference = Math.abs(sidesDifference);
-              for (var i = 1; i <= absoluteSidesDifference; i++) {
+              for (var j = 1; j <= absoluteSidesDifference; j++) {
                 this.stats.shift();
               }
             }
