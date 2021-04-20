@@ -1,18 +1,8 @@
 {
-  "name": "polygraf",
+  "name": "poly",
   "version": "1.0.0",
-  "description": "Не работает",
+  "description": "поли-проба",
   "keywords": [],
   "main": "/index.html",
-  "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "4.0.3",
-    "vue": "2.6.12"
-  },
-  "devDependencies": {
-    "serve": "^11.2.0",
-    "lz-string": "1.4.4",
-    "codesandbox": "1.1.13"
-  }
+  "dependencies": {}
 }
