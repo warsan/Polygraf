@@ -1,4 +1,5 @@
 
+
 new Vue({
   el: "#app",
           data: function() {
@@ -84,4 +85,4 @@ new Vue({
             return point.x + "," + point.y;
           })
           .join(" ");
-       }
+  }

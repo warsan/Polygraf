@@ -1,8 +1,8 @@
 {
-  "name": "poly",
+  "name": "polygraf",
   "version": "1.0.0",
   "description": "поли-проба",
   "keywords": [],
-  "main": "/index.html",
+  "main": "index.html",
   "dependencies": {}
 }
