@@ -4,5 +4,10 @@
   "description": "поли-проба",
   "keywords": [],
   "main": "index.html",
-  "dependencies": {}
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
 }
